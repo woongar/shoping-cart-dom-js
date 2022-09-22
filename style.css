@@ -1,0 +1,77 @@
+body {
+    direction: rtl;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 55px;
+}
+
+/* .container {
+    width:90%;
+    background-color: bisque;
+    margin: auto;
+} */
+
+#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#products {
+    display: flex;
+}
+
+
+
+div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+container {
+}
+/* .box {
+    height: 20%;
+    width:20%;
+    border: 1px solid black;
+    background-color: darkgrey;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin: 70px;
+    */
+/* }
+
+.img-box {
+    width: 150px;
+    height:150;
+    background-color: aqua;
+    margin: auto;
+}
+
+.fishPic {
+    height: 150px;
+    width: 160px;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    background-color: #38b000;
+    margin:auto;
+    border-radius: 8px;
+    color: aliceblue;
+} */
+
+#cart {
+    border: 1px solid black;
+}
+
+p {
+    font-size: 50px;
+}
+
