@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Shoping Cart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+    <title>Adnenced Shoping Cart</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="welcome"><h5>שלום</h5></div>
+     <h6>יש לבצע רישום בטופס לקוחות לפני הקנייה כדי לראות את שם הקונה בדף הבית ובחשבונית</h6>
+    <div id="discountTitle">
+    <h2>הנחה 10%</h2>
+    <h2> בקנייה מעל 300$ </h2>
+   </div>
     
-   <div class="container-fluid">
-        <h1>חנות דגי נוי</h1>
-        <div id="main">
-        </div>
-       
-
-       
-        <div id="products">
-            <!-- <div class="box"><p>דגי זהב</p>
-                <div class="img-box"><img class="fishPic" src="images/gold.jpg" alt="דג זהב"></div>
-                <p>10 שקלים</p>
-                <button onclick="addToChart()">הוסף לעגלה</button>
-            </div>
-        
-            <div class="box"><p>דג אלמוג</p>
-                <div class="img-box"><img class="fishPic" src="images/discusfish.jpg" alt="דג דיסקוס"></div>
-                <p>70 שקלים</p>
-                <button onclick="addToChart()">הוסף לעגלה</button>
-            </div>
-        
-            <div class="box"><p>דג קרב</p>
-                <div class="img-box"><img class="fishPic" src="images/fightingfish.jpg" alt="דג פרה"></div>
-                <p>80 שקלים</p>
-                <button onclick="addToChart()">הוסף לעגלה</button>
-            </div> -->
-        </div>
-        </div>
-        </div>
-        
-        <h2>Cart (<span id="totalItems">0</span>)</h2>
-        <div id="cart"></div>
-        <hr>
-        <p>Total: <span id="totalPrice">0</span></p>
+    <div id="cartAndTotal" class="cartAndTotal">
+      <h2>פריטים (<span id="totalItems">0</span>)</h2>
+      <div id="cart"></div>
+      <hr />
+      
+      <div id="discount"></div>
+      <p id="total">סה"כ <span id="totalPrice">0</span>$</p>
+      <button class="buy" id="buy">בצע קנייה</button>
     </div>
-</div>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js"></script>
-</body>
+      <div id="reciept" class="reciept">
+        <div class="recieptBox">
+            <h3>קבלה עבור <span id="rcName"></span></h3>
+            <div id="rcpro"></div>
+            <div id="recieptTotal"></div>
+            <a href="/">חזרה לעמוד הבית</a>
+        </div>
+      </div>
+    <div class="containerAllPage">
+      <div class="container-fluid">
+        <h1 id="topH1">חנות דגי נוי</h1>
+        <a class="link" href="storage.html">לניהול המחסן</a>
+        <a class="link" href="customers.html">טופס לקוחות</a>
+        <div id="main">
+          <h1>מבחר דגי נוי</h1>
+          <img id="artfish1" src="images/artfish1.png" alt="artfish1" />
+          <img id="coral" src="images/coral.png" alt="coral" />
+          <img id="artfish2" src="images/artfish2.png" alt="artfish2" />
+        </div>
+        <div id="products">
+          <!-- Products Area -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

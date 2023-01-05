@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="storage.js" type="module" defer></script>
+</head>
+
+<body dir="rtl"> 
+    <h1>ניהול מחסן</h1>
+    <a id="homeLink" href="/">חזרה לדף הבית</a>
+    <div class="storageOrders">  
+
+        <h2 id="addRemove">הוספה/הסרה של מוצר</h2>                          
+    שם: <input class="orders" id="productName"><br> 
+    מחיר: <input type="number" class="orders" id="price"><br>
+    יחידות: <input type="number" class="orders" id="units"><br>
+    תמונה: <input class="orders" id="imgurl"><br>
+    <button class="orders" id="addProduct">הוסף פריט</button>
+    <hr>
+    <!-- REMOVE PRODUCT FROM SHOP (STORAGE) -->
+    <button class="orders" id="removeProduct">הסר פריט</button><br>
+    <input type="number" class="orders" id="removeProductInput" placeholder="Enter product id">    
+    </div>
+
+
+     <!-- EDIT PRODUCT -->
+     <!-- Product verify befor update -->
+    <div class="editProduct">
+        <h2 id="updateTitle">עידכון מוצר</h2>
+        <h3>אימות המוצר לפני עדכון</h3>
+        זיהוי המוצר: <input type="number" class="orders" id="itemId" placeholder="Enter Product Id">
+        <div id="productToUpdate"></div>
+        <button class="orders" id="verifyProductButton">זיהוי מוצר</button>
+        <hr>
+        <!-- Product Update -->
+        <h3>עדכן מוצר</h3>
+        <div id="itemNotFound"></div>
+        # <input type="number" class="orders" id="updatingItemId" placeholder="Enter Product Id">
+        שם: <input class="orders" id="updateName"><br> 
+        מחיר: <input type="number" class="orders" id="updatePrice"><br>
+        יחידות: <input type="number" class="orders" id="updateUnits"><br>
+        תמונה: <input class="orders" id="updateImgUrl"><br>
+        <button class="orders" id="updateProductButton">עדכון</button>
+    </div>
+    <hr>
+    <table id="productsTable">
+        <thead id="storageAdd">
+            <td>#</td>
+            <td>name</td>
+            <td>price</td>
+            <td>units</td>
+            <td>תמונה</td>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+hhh
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="storage.js" defer></script>
+</head>
+
+<body dir="rtl">
+    שם: <input id="productName"><br>
+    תאור: <input id="description"><br>
+    תמונה: <input id="imgurl"><br>
+    <button id="addProduct">הוסף פריט</button>
+    <hr>
+    <table id="productsTable">
+        <thead>
+            <td>#</td>
+            <td>שם</td>
+            <td>תאור</td>
+            <td>תמונה</td>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="storage.js" defer></script>
+    <title>Storage</title>
+</head>
+<body>
+    <h1>Storage</h1>
+    <ul>
+        <li><a href="/">home</a></li>
+    </ul>
+
+    Description: <input id="description"> <br>
+    Image Url: <input id="imgUrl"><br>
+    Price: <input id="price"><br>
+    <button id="addProduct">Add Product</button>
+    <hr>
+    Units: <input id="units"><br>
+    <select id="products"> </select><br>
+
+    <button id="addOrderItem">Add Item To Order</button>
+</body>
+</html>  -->
+
